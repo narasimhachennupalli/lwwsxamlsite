@@ -1,0 +1,62 @@
+(node:24160) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+FetchError: request to https://scejpsc.dev.local/sitecore/api/graph/edge failed, reason: unable to verify the first certificate
+    at ClientRequest.<anonymous> (E:\Sitecore103\lwwsxamlsite\node_modules\@sitecore-jss\sitecore-jss\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+  code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE'
+}
+FetchError: request to https://scejpsc.dev.local/sitecore/api/graph/edge failed, reason: unable to verify the first certificate
+    at ClientRequest.<anonymous> (E:\Sitecore103\lwwsxamlsite\node_modules\@sitecore-jss\sitecore-jss\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+  code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE'
+}
+FetchError: request to https://scejpsc.dev.local/sitecore/api/graph/edge failed, reason: unable to verify the first certificate
+    at ClientRequest.<anonymous> (E:\Sitecore103\lwwsxamlsite\node_modules\@sitecore-jss\sitecore-jss\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+  code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE'
+}
+FetchError: request to https://scejpsc.dev.local/sitecore/api/graph/edge failed, reason: unable to verify the first certificate
+    at ClientRequest.<anonymous> (E:\Sitecore103\lwwsxamlsite\node_modules\@sitecore-jss\sitecore-jss\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+  code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE'
+}
+FetchError: request to https://scejpsc.dev.local/sitecore/api/graph/edge failed, reason: unable to verify the first certificate
+    at ClientRequest.<anonymous> (E:\Sitecore103\lwwsxamlsite\node_modules\@sitecore-jss\sitecore-jss\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+  code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE'
+}

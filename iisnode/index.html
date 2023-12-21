@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"DESKTOP-AE99SPS-14628-stderr-1703005762345.txt","computername":"DESKTOP-AE99SPS","pid":14628,"type":"stderr","created":1703005762345},{"file":"DESKTOP-AE99SPS-15008-stderr-1703006259521.txt","computername":"DESKTOP-AE99SPS","pid":15008,"type":"stderr","created":1703006259521},{"file":"DESKTOP-AE99SPS-16136-stderr-1703005758283.txt","computername":"DESKTOP-AE99SPS","pid":16136,"type":"stderr","created":1703005758283},{"file":"DESKTOP-AE99SPS-18856-stderr-1703004988073.txt","computername":"DESKTOP-AE99SPS","pid":18856,"type":"stderr","created":1703004988073},{"file":"DESKTOP-AE99SPS-21244-stderr-1703006247973.txt","computername":"DESKTOP-AE99SPS","pid":21244,"type":"stderr","created":1703006247973},{"file":"DESKTOP-AE99SPS-23720-stderr-1703005788597.txt","computername":"DESKTOP-AE99SPS","pid":23720,"type":"stderr","created":1703005788597},{"file":"DESKTOP-AE99SPS-24160-stderr-1703005159627.txt","computername":"DESKTOP-AE99SPS","pid":24160,"type":"stderr","created":1703005159627},{"file":"DESKTOP-AE99SPS-24160-stdout-1703005159626.txt","computername":"DESKTOP-AE99SPS","pid":24160,"type":"stdout","created":1703005159626},{"file":"DESKTOP-AE99SPS-26980-stderr-1703006216511.txt","computername":"DESKTOP-AE99SPS","pid":26980,"type":"stderr","created":1703006216511},{"file":"DESKTOP-AE99SPS-37768-stderr-1703005806536.txt","computername":"DESKTOP-AE99SPS","pid":37768,"type":"stderr","created":1703005806536},{"file":"DESKTOP-AE99SPS-37768-stdout-1703005806535.txt","computername":"DESKTOP-AE99SPS","pid":37768,"type":"stdout","created":1703005806535},{"file":"DESKTOP-AE99SPS-4740-stderr-1703006214148.txt","computername":"DESKTOP-AE99SPS","pid":4740,"type":"stderr","created":1703006214148},{"file":"DESKTOP-AE99SPS-8416-stderr-1703006277931.txt","computername":"DESKTOP-AE99SPS","pid":8416,"type":"stderr","created":1703006277931},{"file":"DESKTOP-AE99SPS-8416-stdout-1703006277930.txt","computername":"DESKTOP-AE99SPS","pid":8416,"type":"stdout","created":1703006277930}];
+        var lastUpdated = 1703006278516;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+> Ready on http://localhost:\\.\pipe\314877dc-4ef1-4752-9b2d-90cda329c501
+Redirect middleware failed:
+ [TypeError: fetch failed] {
+  cause:  [Error: unable to verify the first certificate] {
+  code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE'
+}
+}
+Redirect middleware failed:
+ [TypeError: fetch failed] {
+  cause:  [Error: unable to verify the first certificate] {
+  code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE'
+}
+}
